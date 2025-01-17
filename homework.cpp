@@ -30,7 +30,7 @@ std::vector<int> primeList(int n)
     {
         if (isPrime(baubau) == 1)
         {
-            prime.push_back(baubau);
+            primes.push_back(baubau);
         }
     }
     return primes;
@@ -49,6 +49,7 @@ std::vector<double> quadForm(double a, double b, double c)
     return roots;
 }
 
+
 int main()
 {
     // Complete your homework here
@@ -59,8 +60,8 @@ int main()
     std::cout << "primeList(20): ";
     display(primes);
 
-    std::vector<double> roots = quadForm(1, -3, 2);
-    std::cout << "quadForm(1, -3, 2): ";
+    std::vector<double> roots = quadForm(1, 9, 14);
+    std::cout << "quadForm(1, 9, 14): ";
     display(roots);
 
     
